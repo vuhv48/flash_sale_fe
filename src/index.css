@@ -1,0 +1,169 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #f5f5f4;
+}
+
+.fs-spin {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+
+.fs-auth {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: minmax(280px, 420px) 1fr;
+  align-items: stretch;
+}
+
+.fs-auth-brand {
+  background: #1c1917;
+  color: #fafaf9;
+  padding: 48px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fs-brand-mark {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #f04438;
+}
+
+.fs-auth-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.fs-auth-card {
+  width: 100%;
+  max-width: 440px;
+}
+
+.fs-sider-brand {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  color: #fafaf9;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.fs-header {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  padding-inline: 24px;
+  border-bottom: 1px solid #e7e5e4;
+}
+
+.fs-content {
+  padding: 24px;
+}
+
+.fs-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.fs-store {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: #f5f5f4;
+}
+
+.fs-store-bar {
+  height: 64px;
+  background: #1c1917;
+  color: #fafaf9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.fs-store-brand {
+  border: 0;
+  background: transparent;
+  color: #fafaf9;
+  font: inherit;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  padding: 0;
+}
+
+.fs-store-main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.fs-event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.fs-event-cover {
+  height: 96px;
+  margin: -24px -24px 16px;
+  display: grid;
+  place-items: center;
+  background: #1c1917;
+  color: #fafaf9;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.fs-catalog-pager {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.fs-panel-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: #57534e;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .fs-auth {
+    grid-template-columns: 1fr;
+    align-content: start;
+  }
+
+  .fs-auth-brand {
+    min-height: 220px;
+  }
+
+  .fs-content {
+    padding: 16px;
+  }
+}
